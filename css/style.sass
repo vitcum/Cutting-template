@@ -1,0 +1,502 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic)
+@import url('https://fonts.googleapis.com/css?family=Lobster')
+
+body 
+  margin: 0
+  font-family: 'Open Sans'
+
+
+* 
+  box-sizing: border-box
+
+$greyback: #313234
+
+.row:before,
+.row:after 
+  content: " "
+  display: table
+
+.row:after 
+  clear: both
+
+
+header 
+  background-color: $greyback
+  height: 50px
+  padding-top: 15px 0 15px 0
+
+
+.container 
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+
+
+header > nav ul 
+  float: right
+  margin: 0
+  padding: 0px 0 15px 0
+  list-style-type: none
+
+
+header > nav ul > li 
+  display: inline-block
+
+
+header > nav ul > li > a 
+  line-height: 50px
+  display: block
+  color: #fff
+  padding: 0 20px
+  text-decoration: none
+  text-transform: uppercase
+
+
+header > nav ul > li > a:hover 
+  background-color: #57585c
+
+
+header > nav img 
+  padding: 10px
+
+
+.hero 
+  background-image: url("http://i.imgur.com/jCrept2.jpg")
+  height: 500px
+
+
+.slogan 
+  float: right
+  max-width: 1200px
+  background-color: rgb(55, 57, 61)
+  opacity: 0.8
+  margin-top: 150px
+
+
+h1,h2,h3,h4,h5
+  text-transform: uppercase
+
+
+.hero>.row>.slogan>h1 
+  color: white
+  text-align: center
+  padding: 20px
+
+
+.row:before, 
+.row:after 
+  content: ""
+  display: table
+  clear: both
+ 
+
+[class*='col-'] 
+  float: left
+  text-align: center
+
+
+.col-1 
+  width: 8.33%
+.col-2 
+  width: 16.66%
+.col-3 
+  width: 25%
+.col-4 
+  width: 33.33%
+.col-5 
+  width: 41.66%
+.col-6 
+  width: 50%
+.col-7 
+  width: 58.33%
+.col-8 
+  width: 66.66%
+.col-9 
+  width: 75%
+.col-10 
+  width: 83.33%
+.col-11 
+  width: 91.66%
+.col-12 
+  width: 100%
+
+.col-offset-0 
+  margin-left: 0
+.col-offset-1 
+  margin-left: 8.33%
+.col-offset-2 
+  margin-left: 16.66%
+.col-offset-3 
+  margin-left: 25%
+.col-offset-4 
+  margin-left: 33.33%
+.col-offset-5 
+  margin-left: 41.66%
+.col-offset-6 
+  margin-left: 50%
+.col-offset-7 
+  margin-left: 58.33%
+.col-offset-8 
+  margin-left: 66.66%
+.col-offset-9 
+  margin-left: 75%
+.col-offset-10 
+  margin-left: 83.33%
+.col-offset-11 
+  margin-left: 91.66%
+
+.fa-book 
+  color: #42cbf4
+
+
+.icons p 
+  color: black
+
+
+.custom 
+  color: #42cbf4
+
+
+div > .container 
+  margin-top: 250px
+
+
+
+.gallery-item2 
+  position: relative
+  width: 25%
+  float: left
+
+.gallery-item2 img 
+  width: 100%
+  max-width: 100%	
+  vertical-align: bottom
+  height: 300px
+
+.gallery-item2 .fa 
+  position: absolute
+  top: 50%
+  left: 50%
+  opacity: 0
+  transform: translateY(-50%)
+  transition: opacity .3s
+  color: #fff
+
+.gallery-item2:hover .fa 
+  opacity: 1
+
+.gallery-item2 .fa-camera-retro 
+  margin-left: -25px
+
+.gallery-item2 .fa-search 
+  margin-left: 4px
+
+
+.gallery-item2:before 
+  content: ""
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(0,0,0,0.0)
+  transition: background .3s
+
+.gallery-item2:hover:before 
+  background: rgba(0,0,0,0.5)
+
+
+img 
+  max-width: 100%
+
+
+.col-m-3 
+  width: 25%
+  text-align: center
+  padding-top: 60px
+  padding-bottom: 60px
+
+
+.img 
+  position: relative
+  width: 150px
+  margin: 0 auto
+  border-radius: 50%
+  overflow: hidden
+
+
+.img img 
+  height: 150px
+  vertical-align: bottom
+  width: 150px
+
+
+.img p 
+  position: absolute
+  top: 0
+  left: 0
+  margin: 0
+  width: 100%
+  height: 100%
+  border-radius: 50%
+  color: #fff
+  text-align: center
+  line-height: 150px
+  background: rgba(0,0,0, .5)
+  opacity: 0
+  transition: opacity .3s
+
+
+.img:hover p 
+  opacity: 1
+
+
+.img h3 
+  text-transform: uppercase
+  text-align: center
+  margin-top: -30px
+  padding-bottom: 20px
+
+
+.workers 
+  max-width: 1200px
+  margin: 0 auto
+
+
+.photo 
+  padding: 100px 100px 0px 100px
+  background-color: #5A6162
+  text-align: center
+
+
+.text 
+  display: block
+  margin-left: -60px
+  width: 60%
+  float: left
+  text-align: left
+  color: white
+
+
+.text h3 
+  color: white
+
+
+.secondtext 
+  display: block
+  width: 40%
+  float: left
+  padding: 47px 0 0 15px
+  text-align: left
+  color: white
+
+
+.icons 
+  padding: 80px
+
+
+.count 
+  max-width: 1200px
+  margin: 0 auto
+  padding: 60px 0 70px 0
+
+
+.count h4 
+  font-weight: bold
+  font-family: 'Lobster', cursive 
+  font-size: 60px
+  margin: 0 auto
+
+
+.count h6 
+  color: #21C5D8
+  font-size: 20px
+  margin: 0 auto
+
+
+.information 
+  margin: 0 auto
+  background-color: #53595A
+  padding: 50px 0 50px 0
+  text-align: left
+
+
+.information p 
+  margin-top: 0
+  color: white
+
+.information h2 
+  display: inline-block
+  position: relative
+  color: white
+
+.information h2:after 
+  content: ""
+  position: absolute
+  margin-top: 16px
+  margin-left: 15px
+  width: 110px
+  border-top: 2px solid #fff
+
+
+.information .col-4:nth-child(2) .col-8 p 
+  margin-bottom: 0
+
+
+a 
+  text-decoration: none
+
+
+.socials > a > i 
+  color: #FFFFFF
+  text-align: center
+  font-size: 20px
+  padding: 5px
+  background-color: #00C7E8
+  margin-left: 5px
+  width: 20px
+  height: 20px
+  box-sizing: content-box
+
+
+.container>.last 
+  text-align: center
+  margin: 0 auto
+  color: white
+  padding: 15px
+  background-color: #bbbbbb
+
+
+.footer 
+  background-color: $greyback
+  text-align: center
+  padding: 5px
+
+
+.footer p 
+  font-size: 20px
+  color: white
+  padding: 10px 0 10px 0
+
+
+@media screen and (max-width: 768px) 
+
+[class*="col-"] 
+  width: 100%
+  padding: 12px
+  float: left
+
+
+.col-s-1 
+  width: 8.33%
+.col-s-2 
+  width: 16.66%
+.col-s-3 
+  width: 25%
+.col-s-4 
+  width: 33.33%
+.col-s-5 
+  width: 41.66%
+.col-s-6 
+  width: 50%
+.col-s-7 
+  width: 58.33%
+.col-s-8 
+  width: 66.66%
+.col-s-9 
+  width: 75%
+.col-s-10 
+  width: 83.33%
+.col-s-11 
+  width: 91.66%
+.col-s-12 
+  width: 100%
+    
+    /* header */
+header 
+  height: auto
+  text-align: center
+
+	
+header > nav ul 
+  float: none
+
+
+header > nav ul > li 
+  display: block
+  text-align: center
+
+
+header > nav img 
+  padding: 10px 0
+
+
+.hero 
+  background-image: url("http://i.imgur.com/jCrept2.jpg")
+  height: 30vh
+
+
+.slogan 
+  width: 30%
+  font-size: 1vh
+  margin-top: 20px
+
+	
+.gallery-item2 .fa 
+  position: absolute
+  top: 90%
+  left: 90%
+  opacity: 1
+  transform: translateY(-50%)
+  transition: opacity .3s
+  color: #E0F954
+
+
+.img p 
+  position: absolute
+  top: 0
+  left: 0
+  margin: 0
+  width: 100%
+  height: 100%
+  border-radius: 50%
+  color: #fff
+  text-align: center
+  line-height: 150px
+  background: rgba(0,0,0, .5)
+  opacity: 0.7
+  transition: opacity .3s
+
+
+
+
+
+@media (min-width: 768px) 
+  /* For desktop: */
+    .col-m-1 width: 8.33%
+    .col-m-2 width: 16.66%
+    .col-m-3 width: 25%
+    .col-m-4 width: 33.33%
+    .col-m-5 width: 41.66%
+    .col-m-6 width: 50%
+    .col-m-7 width: 58.33%
+    .col-m-8 width: 66.66%
+    .col-m-9 width: 75%
+    .col-m-10 width: 83.33%
+    .col-m-11 width: 91.66%
+    .col-m-12 width: 100%
+    
+[class*='col-'] 
+  float: left
+  text-align: center
+
+
+
+
+
+
+
+
+
+
+
